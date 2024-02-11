@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>First of love</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Click here to see few episodes of our life</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">We kept our promise of being there for each other since</h2>
+			<div id="timer">
+				<b id="d"></b> Days 
+				<b id="h"></b> Hours
+				<b id="m"></b> Minutes
+				<b id="s"></b> Seconds
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.png", "pic/pic2.png", "pic/pic3.png", "pic/pic4.png", "pic/pic5.png", "pic/pic6.png", 
+			"pic/pic7.png", "pic/pic8.png", "pic/pic9.png", "pic/pic10.png","pic/pic11.jpg","pic/pic12.jpg","pic/pic13.jpg","pic/pic14.jpg","pic/pic15.jpg","pic/pic16.jpg"];
+			var imageIndex = 0;
+			var txtArray = ["The one when we meet for the first time", "The one when we had our first offical date(tho i still count the morning of puncher tyre as our first date)", "The one when we were not even sure what we are doing (notice the space between us) but still wanted to be together ♡",
+			 "The one when we had our first time", "The one when we signed our marriage certificate(for me its valid)", "The one with our first valentine's day", "The one when we spent our day as a husband and wife"
+			 ,"The one with the elegance","The one when we had our best date", "The one when you made me drink wine", "The one with 2 hrs. of heven", "The one with our first diwali together", 
+			 "The one with your best birthday(I hope)", "The one when you got extremely drunk for the first time with me", "The one when you meet my friends for the first time", "The one when nothing was special but you were and always will be for me "];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
